@@ -13,10 +13,23 @@ public class ShipController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    public Boundaries boundry;
+
     // Update is called once per frame
     void Update()
     {
         movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        Vector3 velocity = rb.velocity;
+        Vector3 tempPosition = transform.localPosition + velocity * Time.deltaTime;
+        if (boundry.AmIOutOfBounds(tempPosition))
+        {
+            Vector2 newPosition = boundry.CalculateWrappedPosition(tempPosition);
+            transform.position = newPosition;
+        }
+        else
+        {
+            transform.position = tempPosition;
+        }
     }
 
     private void FixedUpdate()
