@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 1867909474864545261}
   - component: {fileID: 6853883428899429992}
   m_Layer: 7
-  m_Name: Astroid
-  m_TagString: Untagged
+  m_Name: Asteroid
+  m_TagString: SpawnableAsteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
