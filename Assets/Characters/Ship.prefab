@@ -12,9 +12,8 @@ GameObject:
   - component: {fileID: 2964447470497327362}
   - component: {fileID: 2964447470497327360}
   - component: {fileID: 2964447470497327367}
-  - component: {fileID: 2964447470497327365}
   - component: {fileID: 2964447470497327364}
-  - component: {fileID: -1265135755744490145}
+  - component: {fileID: 3775792169855771871}
   m_Layer: 3
   m_Name: Ship
   m_TagString: Player
@@ -79,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: c7ded71cd96d608468b203f50b3c7c15, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -124,18 +123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 2
---- !u!114 &2964447470497327365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2964447470497327372}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9de54ecc05d89a048a66ac3fd3dff0e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2964447470497327364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,8 +141,8 @@ MonoBehaviour:
   timer: 0
   timeBetweenFiring: 0.3
   bulletVelocity: 10
---- !u!58 &-1265135755744490145
-CircleCollider2D:
+--- !u!70 &3775792169855771871
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -167,9 +154,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0065660956, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.05759383
+  m_Offset: {x: 0, y: -0.001129806}
+  m_Size: {x: 0.13566667, y: 0.26175964}
+  m_Direction: 0
 --- !u!1 &2964447471896923440
 GameObject:
   m_ObjectHideFlags: 0
