@@ -2,16 +2,15 @@ using UnityEngine;
 
 public class LayerTransition : MonoBehaviour
 {
-    public Transform player; // Reference to the player's transform
-    public Vector3 targetPosition; // The position where the camera should shift
+    public Transform player;
+    public Vector3 targetPosition;
 
-    public float smoothSpeed = 2.0f; // The speed at which the camera follows the player
+    public float smoothSpeed = 2.0f;
 
     private bool shouldShiftCamera = false;
 
     void Update()
     {
-        // Check if the player has reached the specified position
         if (player.position.y <= -11 && !shouldShiftCamera)
         {
             Vector3 desiredPosition = new Vector3(0, -22, -10);
