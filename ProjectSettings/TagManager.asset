@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SpawnableAsteroid
   - EnemyShip
+  - EnemyAttack
   layers:
   - Default
   - TransparentFX

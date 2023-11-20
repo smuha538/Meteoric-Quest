@@ -26,10 +26,9 @@ public class EnemyAttack : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         GameObject otherObject = other.collider.gameObject;
-        if (otherObject.gameObject.layer == 3 || otherObject.gameObject.layer == 7)
+        if (otherObject.gameObject.layer == 6 || otherObject.gameObject.layer == 7)
         {
-
-            //Destroy(other.gameObject);
+            Destroy(other.gameObject);
             Destroy(this.gameObject);
         }
     }

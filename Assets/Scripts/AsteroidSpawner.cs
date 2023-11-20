@@ -7,9 +7,6 @@ public class AsteroidSpawner : MonoBehaviour
     public int asteroidAmount;
     public List<GameObject> spawnPool;
     public GameObject quad;
-    // Start is called before the first frame update
-
-    // Update is called once per frame
 
     private void Update()
     {
