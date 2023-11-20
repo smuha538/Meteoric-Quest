@@ -17,6 +17,10 @@ public class AsteroidRing : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
+        //StartCoroutine(GracePeriod());
+    }
+    private void OnEnable()
+    {
         StartCoroutine(GracePeriod());
     }
 

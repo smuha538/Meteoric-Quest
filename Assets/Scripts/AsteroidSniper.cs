@@ -19,6 +19,11 @@ public class AsteroidSniper : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
+        //StartCoroutine(GracePeriod());
+    }
+
+    private void OnEnable()
+    {
         StartCoroutine(GracePeriod());
     }
 

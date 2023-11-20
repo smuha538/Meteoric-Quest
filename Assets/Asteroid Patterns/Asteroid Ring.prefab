@@ -47,7 +47,7 @@ MonoBehaviour:
   objectPrefab: {fileID: 2247404934681014611, guid: 6081383df9f3a1144b026cc494f0924d, type: 3}
   numberOfObjects: 20
   spawnRadius: 30
-  closingSpeed: 5
+  closingSpeed: 8
   gracePeriod: 15
   spawnInterval: 2
   objectLifetime: 30

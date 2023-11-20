@@ -17,6 +17,10 @@ public class AsteroidLockon : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
+        //StartCoroutine(GracePeriod());
+    }
+    private void OnEnable()
+    {
         StartCoroutine(GracePeriod());
     }
 
