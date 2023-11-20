@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1415876621923632871
 Transform:
   m_ObjectHideFlags: 0
@@ -47,4 +47,4 @@ MonoBehaviour:
   asteroidAmount: 10
   spawnPool:
   - {fileID: 2247404934681014611, guid: 6081383df9f3a1144b026cc494f0924d, type: 3}
-  quad: {fileID: 0}
+  quad: {fileID: 8558897384202751636, guid: 4a45393f5625a5a40809e259af4945ca, type: 3}

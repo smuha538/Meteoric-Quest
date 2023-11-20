@@ -8,8 +8,8 @@ public class AsteroidRing : MonoBehaviour
     public float spawnRadius = 5f;
     public float closingSpeed = 1f;
     public float gracePeriod = 1f;
-    public float spawnInterval = 5f; // Set the interval in seconds
-    public float objectLifetime = 10f; // Set the lifetime of spawned objects in seconds
+    public float spawnInterval = 5f; 
+    public float objectLifetime = 10f;
 
     private Transform player;
 
@@ -17,6 +17,10 @@ public class AsteroidRing : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
+        //StartCoroutine(GracePeriod());
+    }
+    private void OnEnable()
+    {
         StartCoroutine(GracePeriod());
     }
 
@@ -28,7 +32,7 @@ public class AsteroidRing : MonoBehaviour
 
     IEnumerator SpawnObjectsRepeatedly()
     {
-        while (true) // Run indefinitely
+        while (true)
         {
             yield return StartCoroutine(SpawnObjects());
             yield return new WaitForSeconds(spawnInterval);
@@ -50,15 +54,12 @@ public class AsteroidRing : MonoBehaviour
 
             GameObject spawnedObject = Instantiate(objectPrefab, spawnPosition, spawnRotation);
 
-            // Move the object towards the player immediately
             Vector3 direction = (player.position - spawnedObject.transform.position).normalized;
             spawnedObject.GetComponent<Rigidbody2D>().velocity = direction * closingSpeed;
 
-            // Destroy the object after a certain period
             Destroy(spawnedObject, objectLifetime);
         }
 
-        // Wait for all objects to finish spawning before returning
         yield return new WaitForSeconds(numberOfObjects * spawnInterval);
     }
 }

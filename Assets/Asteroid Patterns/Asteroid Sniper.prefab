@@ -46,9 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 2247404934681014611, guid: 6081383df9f3a1144b026cc494f0924d, type: 3}
   numberOfObjects: 10
-  spawnRadius: 20
+  spawnRadius: 40
   spawnInterval: 1
   cycleInterval: 15
-  closingSpeed: 10
+  closingSpeed: 20
   gracePeriod: 3
   objectLifetime: 20

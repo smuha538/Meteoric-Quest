@@ -23,7 +23,7 @@ public class ShipController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            rb.velocity = movementDirection * movementSpeed * 2;
+            rb.velocity = movementDirection * movementSpeed * 3;
         }
         else
         {
