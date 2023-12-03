@@ -7,6 +7,8 @@ TagManager:
   - SpawnableAsteroid
   - EnemyShip
   - EnemyAttack
+  - ShipAttack
+  - HealthItem
   layers:
   - Default
   - TransparentFX

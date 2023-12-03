@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4235172298831516854}
   - component: {fileID: 4235172298831516853}
   - component: {fileID: 4235172298831516850}
+  - component: {fileID: 393893223302081436}
   m_Layer: 0
   m_Name: Enemy Ship
   m_TagString: EnemyShip
@@ -151,3 +152,18 @@ MonoBehaviour:
   retreatDistance: 6
   startTimeBetweenShots: 0.5
   bullet: {fileID: 1087353240831932120, guid: 788695ff2a3f2554dadc857a94f277cf, type: 3}
+--- !u!114 &393893223302081436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4235172298831516852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 976aad0944aaf9d47a2dd764364c0ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  healthItem: {fileID: 7794480720029452934, guid: 22315c2f754373a469311e5129edbec0, type: 3}
+  dropProbability: 0.1

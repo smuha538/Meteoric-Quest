@@ -32,7 +32,7 @@ public class AsteroidSpawner : MonoBehaviour
                 position = new Vector2(screenX, screenY);
                 GameObject asteroid = Instantiate(toSpawn, position, toSpawn.transform.rotation);
                 Rigidbody2D rigid = asteroid.GetComponent<Rigidbody2D>();
-                rigid.AddForce(Random.insideUnitCircle.normalized * Random.Range(0,100));
+                rigid.AddForce(Random.insideUnitCircle.normalized * Random.Range(100,300));
 
         }
 

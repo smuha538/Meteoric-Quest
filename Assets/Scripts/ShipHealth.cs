@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class ShipHealth : MonoBehaviour
 {
-    public Image healthbar;
+    public Image healthBar;
     public float maxHealth = 10f;
     private float currentHealth;
 
@@ -18,12 +18,7 @@ public class ShipHealth : MonoBehaviour
         currentHealth -= damageAmount;
         if (currentHealth <= 0)
         {
-            currentHealth = 0;
-            if (currentHealth <= 0)
-            {
-                currentHealth = 0;
-                EndGame();
-            }
+          EndGame();       
         }
     }
 
@@ -46,17 +41,17 @@ public class ShipHealth : MonoBehaviour
         if (collision.gameObject.CompareTag("SpawnableAsteroid") || collision.gameObject.CompareTag("EnemyAttack"))
         {
             TakeDamage(1);
-            healthbar.fillAmount = currentHealth / maxHealth;
+            healthBar.fillAmount = currentHealth / maxHealth;
             Destroy(collision.gameObject);
         }
     }
 
-    void OnCollisionStay2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("HealthItem"))
         {
             IncreaseHealth(1);
-            healthbar.fillAmount = currentHealth / maxHealth;
+            healthBar.fillAmount = currentHealth / maxHealth;
             Destroy(collision.gameObject);
         }
     }
