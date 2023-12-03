@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2964447470497327364}
   - component: {fileID: 3775792169855771871}
   - component: {fileID: 4989942481545109037}
+  - component: {fileID: 5677135054245791089}
   m_Layer: 3
   m_Name: Ship
   m_TagString: Player
@@ -124,6 +125,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 2
+  boostBar: {fileID: 0}
+  maxBoost: 200
 --- !u!114 &2964447470497327364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,8 +173,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8e87ba695038624a8d607a149b52407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthbar: {fileID: 0}
+  healthBar: {fileID: 0}
   maxHealth: 10
+--- !u!114 &5677135054245791089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2964447470497327372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20f790c235347a849b92c86855628cf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2964447471896923440
 GameObject:
   m_ObjectHideFlags: 0

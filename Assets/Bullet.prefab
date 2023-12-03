@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -8986255716141268637}
   m_Layer: 6
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: ShipAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2410ebe8608508b47b2a5f1a95fcee54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthItem: {fileID: 7794480720029452934, guid: 22315c2f754373a469311e5129edbec0, type: 3}
+  dropProbability: 0.1
 --- !u!61 &1004994182025680054
 BoxCollider2D:
   m_ObjectHideFlags: 0
